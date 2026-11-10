@@ -1,0 +1,136 @@
+/* Resources & Features Section */
+.events-section-wrapper {
+  background-color: #f1f5f9;
+  padding: 4rem 1.5rem;
+  width: 100%;
+}
+
+.events-container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.section-title-wrap {
+  text-align: center;
+  margin-bottom: 2.75rem;
+}
+
+.section-title {
+  font-size: clamp(1.5rem, 2.8vw, 2.1rem);
+  font-weight: 700;
+  color: #1f425f;
+  margin-bottom: 0.65rem;
+}
+
+.section-description {
+  font-size: clamp(0.95rem, 1.6vw, 1.05rem);
+  color: #475569;
+  max-width: 620px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Responsive Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.75rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 20px -3px rgba(0, 0, 0, 0.08);
+  border-color: #cbd5e1;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 0.9rem;
+}
+
+.card-icon {
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.card-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #475569;
+  margin-bottom: 1.75rem;
+  flex-grow: 1;
+}
+
+.card-link {
+  margin-top: auto;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1f5f9e;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: color 0.15s ease, gap 0.15s ease;
+}
+
+.card-link:hover {
+  color: #0d4477;
+  gap: 0.65rem;
+  text-decoration: underline;
+}
+
+.card-link .arrow {
+  transition: transform 0.15s ease;
+}
+
+.card-link:hover .arrow {
+  transform: translateX(2px);
+}
+
+/* Tablet & Mobile Breakpoints */
+@media (max-width: 768px) {
+  .events-section-wrapper {
+    padding: 3rem 1.25rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .events-section-wrapper {
+    padding: 2.25rem 1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .card {
+    padding: 1.4rem 1.25rem;
+  }
+}
