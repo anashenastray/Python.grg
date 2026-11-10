@@ -68,7 +68,7 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <p className="footer-copyright">
-            © {new Date().getFullYear()} Python Software Foundation. All rights reserved.
+            © Python Software Foundation. All rights reserved.
           </p>
           <p className="footer-trademark">
             Python and the Python logo are trademarks or registered trademarks of the Python Software Foundation.

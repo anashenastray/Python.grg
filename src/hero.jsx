@@ -20,11 +20,6 @@ fib(1000)
 # Output:
 # 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987`;
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText(codeSnippet);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
 
   return (
     <section className="hero-container" id="about">
@@ -32,8 +27,7 @@ fib(1000)
         <div className="hero-text">
           <h1 className="hero-headline">{displayTitle}</h1>
           <p className="hero-subtext">
-            Python is a versatile programming language that lets you work quickly and
-            integrate systems more effectively across web, data science, automation, and AI.
+            Python is a versatile programming language.
           </p>
           <div className="hero-actions">
             <a href="https://www.python.org/downloads/" className="btn-hero-primary" id="downloads">
@@ -53,13 +47,6 @@ fib(1000)
               <span className="dot green"></span>
             </div>
             <span className="code-title">Python 3: Fibonacci series</span>
-            <button
-              className="copy-btn"
-              onClick={handleCopy}
-              aria-label="Copy code snippet to clipboard"
-            >
-              {copied ? '✓ Copied' : 'Copy'}
-            </button>
           </div>
           <pre className="code-pre">
             <code className="code-content">{codeSnippet}</code>
